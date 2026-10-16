@@ -28,3 +28,23 @@ img{max-width:100%}
 @media(max-width:850px){.nav{min-height:76px}.nav .brand{order:0}.nav .links{flex-basis:100%}.hero-stage:before{inset:0 calc(-1 * clamp(22px,5.8vw,65px))}.contact-panel{max-width:100%}}
 @media(max-width:620px){.hero-stage:before{inset:0 calc(-1 * clamp(22px,5.8vw,65px))}.hero h1{font-size:clamp(29px,8.5vw,35px)}.hero-solutions a{min-width:0}.hero-solutions strong{overflow-wrap:anywhere}.strip span{min-width:0}.email{overflow-wrap:anywhere}.footer-bottom>a{white-space:normal}.footer-top h2{max-width:100%}}
 @media(max-width:360px){.hero-solutions{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.strip span{width:100%}}
+
+/* Spacing refinement only; existing content and layout are preserved. */
+html{overflow-x:clip}
+.hero-solutions strong br{display:block}
+.section-head{margin-bottom:32px}
+.service-photo{margin-bottom:20px}
+.service h3{margin-top:12px;margin-bottom:14px}
+.service .tag{margin-top:18px}
+.steps article,.steps article:first-child{padding:24px 20px}
+.steps h3{margin-bottom:12px}
+.check,.check:first-child{padding:24px 20px}
+.check h3{margin-bottom:12px}
+.diagnostic{gap:32px}
+.fields{gap:18px}
+.fields label{gap:9px}
+.contact-panel .email{padding-top:20px;padding-bottom:20px}
+.faq{padding-top:32px;padding-bottom:48px}
+.footer-top{padding-top:36px;padding-bottom:36px}
+@media(max-width:850px){.section{padding-top:44px;padding-bottom:44px}.hero-solutions{gap:16px}.section-head{margin-bottom:28px}.diagnostic{gap:28px}.steps article,.steps article:first-child{padding:22px 18px}}
+@media(max-width:620px){.nav{padding-top:12px;padding-bottom:12px}.section{padding-top:36px;padding-bottom:36px}.hero-copy{padding-bottom:12px}.hero-solutions{gap:12px}.strip{margin-top:16px;padding-top:16px;padding-bottom:16px;row-gap:12px}.section-head{margin-bottom:24px}.services{gap:32px}.service-photo{margin-bottom:16px}.steps article,.steps article:first-child{padding:20px 16px}.check,.check:first-child{padding:22px 20px}.diagnostic{gap:24px;padding:26px 20px}.fields{gap:16px}.contact{gap:28px}.whatsapp-row{gap:14px;margin-top:20px}.faq{padding-top:20px;padding-bottom:36px}.footer-top{padding-top:30px;padding-bottom:30px}}
