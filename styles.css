@@ -51,3 +51,33 @@ html{overflow-x:clip}
 
 /* Keep the opening banner aligned immediately below navigation. */
 .hero{padding-top:0}
+
+/* Typography refinement: keep whole words and consistent text alignment. */
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+h1,h2,h3,.hero-solutions strong{word-break:normal;overflow-wrap:normal;hyphens:none}
+h2,h3{text-wrap:balance}
+p{word-break:normal;overflow-wrap:normal}
+.hero-solutions strong{line-height:1.35}
+.hero-solutions small{line-height:1.5}
+.service h3{line-height:1.35}
+.service p,.check p,.steps p{line-height:1.65}
+@media(max-width:850px){h2{font-size:clamp(26px,3.7vw,31px)}.hero-solutions strong{font-size:16px}}
+@media(max-width:620px){
+.hero-solutions a,.hero-solutions .featured{padding:18px 12px;align-items:flex-start;text-align:left;gap:10px}
+.hero-solutions a>span{position:static;display:block;margin:0}
+.hero-solutions strong{font-size:14px;line-height:1.4;min-height:2.8em;max-width:100%;overflow-wrap:normal;word-break:normal;letter-spacing:0}
+.hero-solutions small{font-size:13px;line-height:1.5}
+.hero .eyebrow{font-size:10px;line-height:1.5;letter-spacing:.5px}
+.eyebrow{font-size:11px;line-height:1.5;letter-spacing:.6px}
+h2,.contact h2,.diagnostic h2,.faq h2{font-size:clamp(25px,6.6vw,29px);line-height:1.25;letter-spacing:-.3px}
+.service h3{font-size:20px;line-height:1.35}
+.service p,.check p,.contact .lead{font-size:15px;line-height:1.65}
+.steps h3,.check h3{font-size:17px;line-height:1.35}
+.steps p{font-size:14px;line-height:1.6}
+.strip{font-size:12px;line-height:1.6}
+.strip span{display:flex;align-items:flex-start}
+.strip span:before{flex-shrink:0}
+label{font-size:14px;line-height:1.5}
+input,select{font-size:16px}
+summary{font-size:16px;line-height:1.5}
+}
