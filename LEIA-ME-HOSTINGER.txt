@@ -1,0 +1,16 @@
+RR ESTRATÉGIA & PERFORMANCE — INSTALAÇÃO
+
+1. Faça um backup dos arquivos atuais da pasta de publicação do domínio.
+2. Envie este ZIP para public_html pelo gerenciador de arquivos da hospedagem.
+3. Extraia o ZIP diretamente dentro de public_html. index.html e styles.css devem ficar nessa pasta, junto de assets. Não deixe uma pasta extra envolvendo esses arquivos.
+4. Se existir uma página inicial antiga, faça backup e remova ou renomeie apenas esse arquivo para evitar que ele tenha prioridade sobre index.html. Preserve os demais projetos e configurações.
+5. Acesse o domínio e confira o site.
+
+Este é um site estático: não requer instalação de pacotes, PHP, banco de dados ou compilação.
+Domínio configurado nos metadados SEO: https://rrestrategiaperformance.com.br/
+Se usar outro domínio, atualize as duas referências no index.html.
+Área do cliente: https://financeiro.rrestrategiaperformance.com.br/ (sistema externo existente).
+O diagnóstico gera arquivo local; não envia formulários ao e-mail.
+WhatsApp: usa os dígitos informados pelo proprietário, sem número visível na página.
+
+Não extraia arquivos dentro da pasta do sistema financeiro. A instalação do site institucional não deve alterar o sistema.

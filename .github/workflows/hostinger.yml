@@ -1,0 +1,29 @@
+name: Publicar site na Hostinger
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'styles.css', 'assets/**', 'scripts/deploy_hostinger.py', '.github/workflows/hostinger.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: hostinger-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: vars.HOSTINGER_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: production
+    steps:
+      - name: Obter arquivos do site
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Publicar somente arquivos do site institucional por FTPS
+        env:
+          HOSTINGER_FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+          HOSTINGER_FTP_USER: ${{ secrets.HOSTINGER_FTP_USER }}
+          HOSTINGER_FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          HOSTINGER_FTP_DIR: ${{ secrets.HOSTINGER_FTP_DIR }}
+        run: python3 scripts/deploy_hostinger.py
