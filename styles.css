@@ -48,3 +48,6 @@ html{overflow-x:clip}
 .footer-top{padding-top:36px;padding-bottom:36px}
 @media(max-width:850px){.section{padding-top:44px;padding-bottom:44px}.hero-solutions{gap:16px}.section-head{margin-bottom:28px}.diagnostic{gap:28px}.steps article,.steps article:first-child{padding:22px 18px}}
 @media(max-width:620px){.nav{padding-top:12px;padding-bottom:12px}.section{padding-top:36px;padding-bottom:36px}.hero-copy{padding-bottom:12px}.hero-solutions{gap:12px}.strip{margin-top:16px;padding-top:16px;padding-bottom:16px;row-gap:12px}.section-head{margin-bottom:24px}.services{gap:32px}.service-photo{margin-bottom:16px}.steps article,.steps article:first-child{padding:20px 16px}.check,.check:first-child{padding:22px 20px}.diagnostic{gap:24px;padding:26px 20px}.fields{gap:16px}.contact{gap:28px}.whatsapp-row{gap:14px;margin-top:20px}.faq{padding-top:20px;padding-bottom:36px}.footer-top{padding-top:30px;padding-bottom:30px}}
+
+/* Keep the opening banner aligned immediately below navigation. */
+.hero{padding-top:0}
